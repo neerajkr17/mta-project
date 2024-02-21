@@ -1,0 +1,39 @@
+.navbar{
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.navbar {
+    background: hsla(294, 23%, 75%, 1);
+  
+    background: linear-gradient(
+      270deg,
+      hsla(294, 23%, 75%, 1) 75%,
+      hsla(0, 0%, 100%, 1) 100%
+    );
+  
+    background: -moz-linear-gradient(
+      270deg,
+      hsla(294, 23%, 75%, 1) 75%,
+      hsla(0, 0%, 100%, 1) 100%
+    );
+  
+    background: -webkit-linear-gradient(
+      270deg,
+      hsla(294, 23%, 75%, 1) 75%,
+      hsla(0, 0%, 100%, 1) 100%
+    );
+  
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CCB2CF", endColorstr="#FFFFFF", GradientType=1 );
+    padding: 20px;
+    border: 2px solid rgb(182, 182, 182);
+  }
+
+  .navbar-logo {
+    height: 80px;
+  }
+  

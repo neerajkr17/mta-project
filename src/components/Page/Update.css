@@ -1,0 +1,30 @@
+.update-container {
+    display: flex;
+}
+
+.midareapage {
+    padding: 100px;
+    display: flex;
+}
+
+label {
+    width: 300px;
+}
+
+input {
+    width: auto;
+}
+
+.content {
+    padding-top: 20px;
+  }
+
+.toparea-update {
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+Button {
+    padding-left: 20px;
+}

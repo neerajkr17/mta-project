@@ -1,0 +1,42 @@
+.Side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ccb2cf;
+    padding: 10px;
+  }
+  
+  .Side button {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 8px;
+    color: black;
+    background-color: #ccb2cf;
+    border: 2px solid #0a1257 ;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 900;
+  }
+  
+  
+  .Side button:hover {
+    background-color: #0a1257;
+    color: white;
+    font-weight: 900;
+  }
+  
+  .Side{
+    padding: 20px;
+    height: 688px;
+    width: 330px;
+    
+  }
+
+  .selected {
+    background-color: #0a1257;
+    color: white;
+    font-weight: 900;
+  }
+
+  
+  

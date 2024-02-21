@@ -1,0 +1,40 @@
+.open-container {
+  display: flex;
+  /* justify-content: flex-start; */
+}
+
+
+.toparea {
+  display: flex;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+
+#accountType {
+  width: 250px;
+  height: 30px;
+}
+
+.opening-page-btn{
+  display: flex;
+  justify-content: space-around;
+}
+
+.opening-page-btn button {
+  background-color: #bfb9b9;
+  border-radius: 12px;
+  padding: 7px 11px;
+}
+
+.midareapage-opening {
+  padding: 100px;
+  display: flex;
+}
+
+.content {
+  padding-top: 20px;
+}
+
+.container {
+  display: flex;
+}
