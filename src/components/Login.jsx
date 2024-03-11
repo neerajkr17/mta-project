@@ -1,46 +1,33 @@
-import React from 'react'
-import './Login.css';
-import user_icon from './Assets/person.png';
-import email_icon from './Assets/email.png';
-import password_icon from './Assets/password.png';
-import { useState } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-    const [action,setAction] = useState("Sign Up");
+    const navigate = useNavigate();
 
-  return (
-    <div className='login-form'>
-    <div className='container'>
-        <div className='header'>
-            <div className='text'>{action}</div>
-                <div className='underline'></div>
-        </div>
-        <div className='inputs'>
-            {action==="Login" ? <div></div> :<div className='input'>
-                <img src={user_icon} alt=""/>
-                <input type='text' placeholder='Name'/>
-            </div>}
-            
+    function handleLogin() {
+        navigate('/landing');
+    }
 
-            <div className='input'>
-                <img src={email_icon} alt=""/>
-                <input type='email' placeholder='Email Id'/>
+    return (
+        <div className='login-form bg-pink-300'>
+            <div className='bg-gray-200 flex justify-between mx-20 py-6 p-6 rounded-xl'>
+                <img src='https://fiaks.com/wp-content/uploads/2019/03/Final-Fino-Payments-Bank-Logo_White.jpg' className='navbar-logo rounded' href="#" alt='logo' />
+                <div>
+                    <p>Qadar</p>
+                    <p>Apki Mehnat Ki</p>
+                </div>
             </div>
 
-            <div className='input'>
-                <img src={password_icon} alt=""/>
-                <input type='password' placeholder='Password'/>
+            <form>
+                {/* Your form elements go here */}
+            </form>
+
+            <div className='btn mx-96 space-x-60'>
+                <button className="bg-gray-400 py-2 px-5 rounded-lg" onClick={handleLogin}>Login</button>
+                <button className="bg-gray-400 py-2 px-5 rounded-lg">Clear</button>
             </div>
         </div>
-        {action==="Sign Up" ? <div></div> : <div className='forgot-password'>Forgot Password ? <span>Click Here!</span></div>}
-        
-        <div className='submit-container'>
-            <div className={action === "Login" ? "submit gray" : "submit"} onClick={()=>{setAction("Sign Up")}}>Sign Up</div>
-            <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={()=>{setAction("Login")}}>Login</div>
-        </div>
-    </div>
-    </div>
-  )
+    );
 }
 
-export default Login
+export default Login;

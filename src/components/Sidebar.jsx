@@ -4,7 +4,7 @@ import "./Sidebar.css";
 
 function Sidebar() {
   return (
-    <div className="Side">
+    <div className="Side h-[calc(100vh-100px)] w-auto">
 
       <NavLink to="/merchant-opening">
         <button>Merchant A/c Opening</button>
@@ -14,12 +14,12 @@ function Sidebar() {
         <button>Merchant Update</button>
       </NavLink>
 
-      <NavLink to="/merchant-modify">
-        <button>Merchant Maker Modify</button>
+      <NavLink to="/merchant-dashboard">
+        <button>Maker Checker Dashboard</button>
       </NavLink>
       
-      <NavLink to="/merchant-verify">
-        <button>Merchant Checker Verify</button>
+      <NavLink to="/merchant-activitypage">
+        <button>Maker Cheaker Activity</button>
       </NavLink>
     </div>
   );
